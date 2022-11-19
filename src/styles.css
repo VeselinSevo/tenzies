@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0B2434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla';
+    padding: 3rem;
+}
+
+main {
+    background-color: #F5F5F5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.title {
+    color: #2B283A;
+    margin-bottom: -0.5rem;
+}
+
+.instructions {
+    color: #4A4E74;
+    width: 70%;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+}
+
+.stat-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0B2434;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.stat-value {
+    font-style: 800;
+    color: rgb(33, 54, 138);
+}
+
+.timer__stop {
+    background-color: rgb(206, 160, 8);
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    min-height: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.timer__stop:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all ease-out 0.1s;
+}
+
+.dice-container {
+    display: grid;
+    width: 90%;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 1.2rem;
+    justify-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.die {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 100%;
+    min-height: 4.4rem;
+    font-family: 'Karla';
+    display: flex;
+    padding: 6px;
+}
+
+.die:hover {
+    cursor: pointer;
+}
+
+.dot {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #0B2434;
+}
+
+/* FIRST FACE */
+.first-face {
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECOND FACE  */
+.second-face{
+    justify-content : space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+/* THIRD FACE  */
+.third-face {
+    flex-direction: column;
+    gap: 2px;
+}
+.third-face .dot:nth-of-type(1) {
+    align-self : flex-start;
+    justify-self: flex-start;
+}
+.third-face .dot:nth-of-type(2) {
+    align-self : center;
+    justify-self: center;
+}
+.third-face .dot:nth-of-type(3) {
+    align-self : flex-end;
+}
+
+/* FOURTH FACE  */
+.fourth-face {
+    justify-content: space-between;
+}
+
+.fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FIFTH FACE  */
+.fifth-face {
+    justify-content: space-between;
+}
+
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+    }
+
+/* SIXTH FACE  */
+.sixth-face {
+    justify-content: space-between;
+}
+
+.sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+}
+
+.button {
+    background-color: #75e46b;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    min-height: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    transform: scale(0.95);
+    transition: all ease-out 0.1s;
+    height: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.roll-dice {
+    background-color: rgb(33, 54, 138);
+}
+
+.roll-dice:hover {
+    cursor: pointer;
+    transform: scale(0.92);
+    transition: all ease-out 0.1s;
+}
+
+.restart {
+    background-color: #ffffff;
+    color: rgb(33, 54, 138);
+    margin-bottom: 0.2rem;
+}
+
+.restart:hover {
+    cursor: pointer;
+    transform: scale(0.92);
+    transition: all ease-out 0.1s;
+}
